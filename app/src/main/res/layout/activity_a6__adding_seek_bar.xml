@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.piano.itc162_a6_addingseekbar.A6_AddingSeekBar"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TextView
+        android:id="@+id/assignmentLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ITC 162 Assignment 6_Adding SeekBar"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/appLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TempConverterApp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <TextView
+        android:id="@+id/faTextView"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:text="@string/fahrenheit"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/ceTextView"
+        android:layout_width="161dp"
+        android:layout_height="30dp"
+        android:text="@string/celsius"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="189dp"
+        android:layout_height="43dp"
+        android:hint="@string/enter_a_number"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/displyResult"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="31dp"
+        android:background="@android:color/white"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="Clear"
+        android:text="Clear"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="311dp"
+        android:layout_height="13dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+</android.support.constraint.ConstraintLayout>

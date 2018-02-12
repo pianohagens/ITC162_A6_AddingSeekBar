@@ -1,0 +1,10 @@
+<resources>
+    <string name="assignment_name">ITC162_A6_AddingSeekBar</string>
+    <string name="app_name">TempConverterApp</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celsius">Celsius</string>
+    <string name="enter_a_number">Enter a Number</string>
+    <string name="conver">Convert</string>
+    <string name="adding">+</string>
+    <string name="decreasing">-</string>
+</resources>
