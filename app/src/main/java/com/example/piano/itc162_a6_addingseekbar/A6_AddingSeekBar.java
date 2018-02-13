@@ -104,27 +104,23 @@ public class A6_AddingSeekBar extends Activity
         return false;
     }
 
-    //for the clear button
-    public void Clear(View clear){
-        inputNumber.setText("");
-        displyResult.setText("");
-    }
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-// Toast.makeText(getApplicationContext(),"seekbar progress: "+progress, Toast.LENGTH_SHORT).show();
-        inputNumber.setText("Skill level " + i);
+        Toast.makeText(getApplicationContext(),"Input Degree Fahrenheit of: " + i, Toast.LENGTH_SHORT).show();
+        inputNumber.setText(i + " \u00b0F");
+        displyResult.setText((i-32)*5/9 + " \u00b0C");
     }
 
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
-        // Toast.makeText(getApplicationContext(),"seekbar touch started!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"seekbar touch started!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
         int i = seekBar.getProgress();
-        //// Toast.makeText(getApplicationContext(),"seekbar touch stopped!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"seekbar touch stopped!", Toast.LENGTH_SHORT).show();
         if (i >= 32) {
             Toast.makeText(getApplicationContext(), "Cool", Toast.LENGTH_SHORT).show();
         }
@@ -132,5 +128,11 @@ public class A6_AddingSeekBar extends Activity
             Toast.makeText(getApplicationContext(), "Hot", Toast.LENGTH_LONG).show();
         }
 
+    }
+
+    //for the clear button
+    public void Clear(View clear){
+        inputNumber.setText("");
+        displyResult.setText("");
     }
 }

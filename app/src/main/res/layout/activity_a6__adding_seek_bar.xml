@@ -11,86 +11,132 @@
         android:id="@+id/assignmentLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="ITC 162 Assignment 6_Adding SeekBar"
+        android:layout_marginTop="24dp"
+        android:text="@string/itc_162_assignment_6_adding_seekbar"
+        android:textAlignment="center"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/appLabel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TempConverterApp"
+        android:layout_marginTop="28dp"
+        android:text="@string/tempconverterapp"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="56dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assignmentLabel" />
 
     <TextView
         android:id="@+id/faTextView"
-        android:layout_width="164dp"
+        android:layout_width="wrap_content"
         android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/fahrenheit"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="141dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ceTextView"
+        app:layout_constraintEnd_toStartOf="@+id/inputNumber"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.872" />
 
     <TextView
         android:id="@+id/ceTextView"
-        android:layout_width="161dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:text="@string/celsius"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="208dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/displyResult"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/inputNumber"
-        android:layout_width="189dp"
+        android:layout_width="183dp"
         android:layout_height="43dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
         android:hint="@string/enter_a_number"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="141dp" />
+        app:layout_constraintBottom_toTopOf="@+id/displyResult"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/displyResult"
         android:layout_width="@android:dimen/thumbnail_height"
         android:layout_height="31dp"
+        android:layout_marginEnd="32dp"
         android:background="@android:color/white"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="208dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
 
     <Button
         android:id="@+id/clearButton"
         android:layout_width="128dp"
         android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/holo_green_dark"
         android:onClick="Clear"
-        android:text="Clear"
+        android:text="@string/clear"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="265dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displyResult"
+        app:layout_constraintVertical_bias="0.13" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="311dp"
-        android:layout_height="13dp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="111dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLabel"
+        app:layout_constraintVertical_bias="0.382" />
 
 </android.support.constraint.ConstraintLayout>

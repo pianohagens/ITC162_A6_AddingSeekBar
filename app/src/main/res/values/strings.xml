@@ -5,6 +5,8 @@
     <string name="celsius">Celsius</string>
     <string name="enter_a_number">Enter a Number</string>
     <string name="conver">Convert</string>
-    <string name="adding">+</string>
-    <string name="decreasing">-</string>
+    <string name="seekBar"></string>
+    <string name="clear">Clear</string>
+    <string name="itc_162_assignment_6_adding_seekbar">ITC 162 Assignment 6_Adding SeekBar</string>
+    <string name="tempconverterapp">TempConverterApp</string>
 </resources>
