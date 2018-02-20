@@ -1,5 +1,5 @@
 <resources>
-    <string name="assignment_name">ITC162_A6_AddingSeekBar</string>
+    <string name="assignment_name">ITC162_A7_Stying</string>
     <string name="app_name">TempConverterApp</string>
     <string name="fahrenheit">Fahrenheit</string>
     <string name="celsius">Celsius</string>
