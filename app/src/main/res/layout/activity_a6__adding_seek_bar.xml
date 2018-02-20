@@ -131,6 +131,7 @@
 
     <SeekBar
         android:id="@+id/seekBar"
+        style="@android:style/Widget.SeekBar"
         android:layout_width="311dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
