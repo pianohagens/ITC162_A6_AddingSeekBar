@@ -1,9 +1,14 @@
 package com.example.piano.itc162_a6_addingseekbar;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -135,4 +140,42 @@ public class A6_AddingSeekBar extends Activity
         inputNumber.setText("");
         displyResult.setText("");
     }
+    // Adding Menu...
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.a7:
+                Intent intent1 = new Intent(this, A7.class);
+                this.startActivity(intent1);
+                return true;
+            case R.id.a8:
+                Intent intent2 = new Intent(this, A8.class);
+                this.startActivity(intent2);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+
+    }
+
+    //Adding SettingActivity
+    public void displaySetting(View view){
+        //Start the setting activity
+        startActivity(new Intent(this, SettingsActivity.class));
+    }
+    public void readSettings(View view){
+        //Read the value (which is stored in a key value pair
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        String setting1 = prefs.getString("example_text", "a8_defaltValue");
+
+        Toast.makeText(this, setting1, Toast.LENGTH_LONG).show();
+    }
+
 }

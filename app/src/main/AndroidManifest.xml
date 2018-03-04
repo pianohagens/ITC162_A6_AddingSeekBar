@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".A7"
+            android:label="A7"
+            android:parentActivityName=".A6_AddingSeekBar" />
+        <activity
+            android:name=".A8"
+            android:label="A8"
+            android:parentActivityName=".A6_AddingSeekBar"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>
